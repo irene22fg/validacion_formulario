@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Irene Figuereo Galán</title>
+</head>
+<body>
+    <h1>Envío de datos</h1>
+    <form  novalidate  action="https://www.w3schools.com/action_page.php" id="frm1" >
+        <fieldset disabled> 
+            <legend>
+                <input type="checkbox" id="info">
+                <label for="info"> Deseo recibir información adicional</label>
+            </legend>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@si.com"/>
+                <span id="span1"></span>
+            </div>
+            <div>
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required pattern="^(6|7)[ -]*([0-9][ -]*){8}$" placeholder="645789135"/>
+              <span id="span2"></span>
+          </div>
+        </fieldset>
+        <input type="checkbox" id="edad">
+        <input type="hidden" id="hidden" value="no" name="mayor-edad">
+        <label for="edad"> Soy mayor de edad</label>
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
